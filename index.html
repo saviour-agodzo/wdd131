@@ -1,14 +1,74 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>WDD 131</title>
+    <meta name="description" content="WDD 131 – Dynamic Web Fundamentals, Saviour Agodzo, course home page">
+    <meta name="author" content="Saviour Agodzo">
+    <title>WDD 131 – Dynamic Web Fundamentals – Saviour Agodzo</title>
+
+    <link rel="stylesheet" href="styles/base.css">
+    <script src="scripts/getdates.js" defer></script>
 </head>
 
 <body>
-    <h1>WDD 131 - Saviour</h1>
+    <header>
+        <span id="course-title">WDD 131 – Dynamic Web Fundamentals</span>
+
+        <nav>
+            <a href="...">LinkedIn</a>
+            <a href="https://byupw.instructure.com/">Canvas</a>
+            <a href="...">Scripture</a>
+            <a href="...">Final Project</a>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Saviour Agodzo</h1>
+
+        <section class="card about-card">
+            <h2>About Me</h2>
+        
+            <div class="about-content">
+                <img class="profile" src="images/profile.jpg" alt="Your Name">
+                <p>
+                    Hello! My name is Saviour Agodzo, and I am a passionate web developer from Ghana.
+                    I am currently working as a professional teacher and I love teaching. I enjoy playing
+                    football with my friends and aside that, I like reading story books in my leisure time.
+                </p>
+            </div>
+        
+            <div class="location">
+                <h3>Winneba, Ghana</h3>
+                <img class="flag" src="images/Ghana-flag.jpg" alt="Official flag of Ghana">
+                <p>
+                    Ghana is a country in West Africa, located along the Gulf of Guinea and
+                    bordered by Cote d 'Ivoire, Burkina Faso, and Togo. It has multiparty
+                    democratic system and is regarded as one of Africa's more stable democracies.
+                    In the EIU Democracy Index 2024, Ghana scored 6.24/10, ranking 65th globally.
+                    It is famous worldwide for cocoa, being one of the world's leading cocoa-producing
+                    countries (approximately 13% of the word cocoa.)
+                </p>
+            </div>
+        </section>
+        <section class="card">
+            <section class="card">
+                <h2>Web Dev Resources</h2>
+                <ul>
+                    <li><a href="https://developer.mozilla.org/" target="_blank">MDN Web Docs</a></li>
+                    <li><a href="https://www.w3schools.com/" target="_blank">W3Schools</a></li>
+                    <li><a href="https://css-tricks.com/" target="_blank">CSS-Tricks</a></li>
+                    <li><a href="https://www.freecodecamp.org/" target="_blank">freeCodeCamp</a></li>
+                </ul>
+            </section>
+        </section>
+    </main>
+
+    <footer>
+        <p>© <span id="currentyear"></span> 🌴 Saviour Agodzo 🌴 Ghana</p>
+        <p id="lastModified"></p>
+    </footer>
 </body>
 
 </html>
