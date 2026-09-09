@@ -1,0 +1,106 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    color: #111;
+}
+
+h1 {
+    max-width: 390px;
+    margin: 1.5rem auto;
+    font-size: 1.85rem;
+    font-weight: 700;
+    white-space: nowrap;
+}
+
+main {
+    max-width: 390px;
+    min-height: 423px;
+    margin: 0 auto;
+    padding: 1.4rem 1.2rem;
+    background-color: #ddd;
+    border: 1px solid #c4c4c4;
+}
+
+label {
+    display: block;
+    margin-bottom: 0.25rem;
+    font-weight: 700;
+    font-size: 1.05rem;
+}
+
+input {
+    display: block;
+    width: 100%;
+    padding: 0.45rem 0.55rem;
+    border: 2px solid #222;
+    border-radius: 4px;
+    font: inherit;
+    font-size: 1rem;
+}
+
+/* The Add Chapter button: shorter than the input and centered */
+
+main > button {
+  display: block;
+  width: calc(100% - 16px);
+  margin: 0.55rem 8px 2.15rem;
+  padding: 0.45rem;
+  border: 1px solid #888;
+  border-radius: 3px;
+  background-color: #eee;
+  font: inherit;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+ul {
+    margin: 0;
+    padding: 0 1rem;
+    list-style: none;
+}
+
+li {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    min-height: 59px;
+    margin-bottom: 0;
+    font-size: 1.15rem;
+    font-weight: 700;
+}
+
+li button {
+    width: 43px;
+    height: 41px;
+    padding: 0;
+    border: 1px solid #999;
+    border-radius: 3px;
+    background-color: #eee;
+    color: #ff3c65;
+    font-size: 1.65rem;
+    line-height: 1;
+    cursor: pointer;
+}
+
+#message {
+    min-height: 1.5rem;
+    margin: 0.75rem 0;
+    font-weight: 700;
+}
+
+.error {
+    color: #b00020;
+}
+
+.success {
+    color: #176b2c;
+}
+
+main>button:disabled {
+    cursor: not-allowed;
+    opacity: 0.6;
+}
