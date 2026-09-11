@@ -1,0 +1,133 @@
+:root {
+    --ink: #172334;
+    --paper: #fbfaf7;
+    --surface: #ffffff;
+    --accent: #b36d42;
+    --muted: #5c6673;
+    --shadow: 0 8px 22px rgb(23 35 52 / 12%);
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    color: var(--ink);
+    background: var(--paper);
+    font-family: "DM Sans", Arial, sans-serif;
+}
+
+header {
+    background: var(--ink);
+}
+
+.header-content {
+    max-width: 1100px;
+    min-height: 4.75rem;
+    margin: 0 auto;
+    padding: 0.8rem 1.25rem;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.site-title {
+    color: white;
+    font-family: "Playfair Display", Georgia, serif;
+    font-size: 1.5rem;
+    text-decoration: none;
+}
+
+.menu-button {
+    padding: 0.25rem 0.5rem;
+    border: 0;
+    color: white;
+    background: transparent;
+    font-size: 1.8rem;
+    line-height: 1;
+    cursor: pointer;
+}
+
+nav {
+    display: none;
+    width: 100%;
+    padding-top: 0.65rem;
+    flex-direction: column;
+}
+
+nav.open {
+    display: flex;
+}
+
+nav a {
+    padding: 0.7rem;
+    color: white;
+    border-radius: 0.25rem;
+    font-weight: 700;
+    text-align: center;
+    text-decoration: none;
+}
+
+nav a:hover,
+nav a:focus-visible {
+    background: var(--accent);
+}
+
+main {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 2rem 1.25rem 3rem;
+}
+
+h1 {
+    margin: 0 0 1.75rem;
+    font-family: "Playfair Display", Georgia, serif;
+    font-size: clamp(2rem, 5vw, 3rem);
+    text-align: center;
+}
+
+.album {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+}
+
+figure {
+    margin: 0;
+    overflow: hidden;
+    background: var(--surface);
+    border-radius: 0.35rem;
+    box-shadow: var(--shadow);
+}
+
+figure img {
+    display: block;
+    width: 100%;
+    aspect-ratio: 3 / 2;
+    object-fit: cover;
+}
+
+figcaption {
+    padding: 0.85rem 1rem;
+    color: var(--muted);
+    font-weight: 700;
+    text-align: center;
+}
+
+footer {
+    padding: 1.25rem;
+    color: white;
+    background: var(--ink);
+    text-align: center;
+}
+
+footer p {
+    margin: 0.25rem;
+}
+
+#lastModified {
+    color: #f4c99b;
+    font-size: 0.9rem;
+}
