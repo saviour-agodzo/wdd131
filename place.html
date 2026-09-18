@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A country page about Ghana, including
+    information about its location, population, capital, and weather.">
+    <meta name="author" content="Saviour Agodzo">
+    <title>Ghana | WDD 131 Country Page</title>
+    <link rel="stylesheet" href="styles/place.css">
+    <script src="scripts/place.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <h1>Ghana</h1>
+    </header>
+
+    <main>
+        <section class="hero">
+            <picture>
+                <source media="(min-width: 700px)" srcset="images/ghana-large.webp">
+                <img src="images/ghana-small.webp" alt="Landscape of Ghana" width="800" height="600">
+            </picture>
+        </section>
+        <section class="info-card about">
+            <h2>About Ghana</h2>
+            <dl>
+                <div>
+                    <dt>Country:</dt>
+                    <dd>Ghana</dd>
+                </div>
+                <div>
+                    <dt>Capital:</dt>
+                    <dd>Accra</dd>
+                </div>
+                <div>
+                    <dt>Region:</dt>
+                    <dd>West Africa</dd>
+                </div>
+                <div>
+                    <dt>Population:</dt>
+                    <dd>Approximately 34 million</dd>
+                </div>
+                <div>
+                    <dt>Language:</dt>
+                    <dd>English</dd>
+                </div>
+                <div>
+                    <dt>Currency:</dt>
+                    <dd>Ghanaian Cedi (GHS)</dd>
+                </div>
+                <div>
+                    <dt>Independence:</dt>
+                    <dd>6 March 1957</dd>
+                </div>
+                <div>
+                    <dt>Continent:</dt>
+                    <dd>Africa</dd>
+                </div>
+            </dl>
+        </section>
+        <section class="info-card weather">
+            <h2>Weather <span class="weather-icon" aria-hidden="true">🌦️</span></h2>
+            <img class="mobile-weather-icon" src="images/weather.png" alt="Partly cloudy weather">
+            <dl>
+                <div>
+                    <dt>Temperature:</dt>
+                    <dd><span id="temperature">28</span>°C</dd>
+                </div>
+                <div>
+                    <dt>Condition:</dt>
+                    <dd>Partly Cloudy</dd>
+                </div>
+                <div>
+                    <dt>Wind:</dt>
+                    <dd><span id="wind-speed">12</span> km/h</dd>
+                </div>
+                <div>
+                    <dt>Wind-Chill:</dt>
+                    <dd><span id="wind-chill">N/A</span></dd>
+                </div>
+            </dl>
+        </section>
+    </main>
+
+    <footer>
+        <P>
+        © <span id="currentyear"></span> 🌴 Ghana Country Page 🌴 Ghana
+        </P>
+        <p>
+            Last Modification: <span id="lastModified"></span>
+        </p>
+    </footer>
+</body>
+</html>
