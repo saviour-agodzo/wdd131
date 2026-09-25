@@ -110,10 +110,20 @@ figure img {
 }
 
 figcaption {
-    padding: 0.85rem 1rem;
+    padding: 1rem 1.25rem 0.5rem;
     color: var(--muted);
     font-weight: 700;
     text-align: center;
+}
+
+.temple-info {
+    padding: 0.5rem 1.25rem 1.25rem;
+    text-align: center;
+}
+
+.temple-info p {
+    margin: 0.5rem 0;
+    line-height: 1.5;
 }
 
 footer {
