@@ -1,0 +1,517 @@
+/* ================================
+   Ghana Cocoa Guide
+   WDD 131 - Week 05 Site Plan
+   ================================ */
+
+
+/* ----------------
+   CSS Variables
+   ---------------- */
+
+:root {
+    --forest-green: #1B4332;
+    --cocoa-brown: #6F4E37;
+    --cream: #F5F0E6;
+    --white: #FFFFFF;
+    --light-green: #D8E6DE;
+    --light-brown: #E8DDD4;
+    --dark-text: #222222;
+
+    --heading-font: "Poppins", sans-serif;
+    --body-font: "Open Sans", sans-serif;
+}
+
+
+/* ----------------
+   General Styles
+   ---------------- */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background-color: var(--cream);
+    color: var(--dark-text);
+    font-family: var(--body-font);
+    line-height: 1.6;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+h1,
+h2,
+h3 {
+    font-family: var(--heading-font);
+}
+
+h1 {
+    color: var(--forest-green);
+    font-size: 2.2rem;
+    margin-top: 0;
+}
+
+h2 {
+    color: var(--forest-green);
+    border-bottom: 3px solid var(--cocoa-brown);
+    padding-bottom: 0.5rem;
+    margin-top: 0;
+}
+
+h3 {
+    color: var(--cocoa-brown);
+}
+
+p {
+    max-width: 75ch;
+}
+
+
+/* ----------------
+   Header
+   ---------------- */
+
+header {
+    background-color: var(--forest-green);
+    color: var(--white);
+    border-bottom: 6px solid var(--cocoa-brown);
+}
+
+.site-header {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 1.25rem 1rem;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+
+    font-family: var(--heading-font);
+    font-weight: 700;
+}
+
+.logo-icon {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 48px;
+    height: 48px;
+
+    background-color: var(--cocoa-brown);
+    color: var(--white);
+
+    border: 2px solid var(--white);
+    border-radius: 50%;
+
+    font-family: var(--heading-font);
+    font-weight: 700;
+}
+
+.logo-text {
+    font-size: 1.25rem;
+}
+
+.site-plan-label {
+    margin: 0;
+    font-size: 0.9rem;
+}
+
+
+/* ----------------
+   Main Content
+   ---------------- */
+
+main {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 2rem 1rem;
+}
+
+.plan-section {
+    background-color: var(--white);
+
+    margin-bottom: 2rem;
+    padding: 2rem;
+
+    border-left: 6px solid var(--forest-green);
+    border-radius: 8px;
+
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+
+/* ----------------
+   Logo Preview
+   ---------------- */
+
+.logo-preview {
+    background-color: var(--forest-green);
+    padding: 1.5rem;
+    margin: 1rem 0 1.5rem;
+
+    border-radius: 8px;
+}
+
+.large-logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+
+    color: var(--white);
+
+    font-family: var(--heading-font);
+    font-size: 1.5rem;
+    font-weight: 700;
+
+    text-align: center;
+}
+
+
+/* ----------------
+   Scenarios
+   ---------------- */
+
+.scenario-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+}
+
+.scenario-card {
+    background-color: var(--light-green);
+
+    padding: 1.25rem;
+
+    border-top: 4px solid var(--forest-green);
+    border-radius: 6px;
+}
+
+.scenario-card h3 {
+    margin-top: 0;
+}
+
+.scenario-card p {
+    margin-bottom: 0;
+}
+
+
+/* ----------------
+   Color Schema
+   ---------------- */
+
+.color-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1rem;
+}
+
+.color-card {
+    background-color: var(--cream);
+
+    padding: 1rem;
+
+    border: 1px solid #ddd;
+    border-radius: 8px;
+}
+
+.color-card h3 {
+    margin-bottom: 0.25rem;
+}
+
+.color-card p {
+    font-size: 0.9rem;
+}
+
+.color-swatch {
+    height: 90px;
+    border-radius: 6px;
+    margin-bottom: 1rem;
+    border: 2px solid #ccc;
+}
+
+.green {
+    background-color: #1B4332;
+}
+
+.brown {
+    background-color: #6F4E37;
+}
+
+.cream {
+    background-color: #F5F0E6;
+}
+
+.white {
+    background-color: #FFFFFF;
+}
+
+
+/* ----------------
+   Typography
+   ---------------- */
+
+.font-example {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+}
+
+.font-card {
+    padding: 1.5rem;
+
+    background-color: var(--cream);
+
+    border-left: 5px solid var(--cocoa-brown);
+    border-radius: 6px;
+}
+
+.font-card h3 {
+    margin-top: 0;
+}
+
+.poppins-example {
+    font-family: var(--heading-font);
+}
+
+.opensans-example {
+    font-family: var(--body-font);
+}
+
+.font-use {
+    font-size: 0.95rem;
+}
+
+.sample-heading {
+    font-family: var(--heading-font);
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--forest-green);
+}
+
+.sample-body {
+    font-family: var(--body-font);
+}
+
+
+/* ----------------
+   Wireframes
+   ---------------- */
+
+.wireframe-container {
+    margin-top: 2rem;
+}
+
+.wireframe-container h3 {
+    margin-bottom: 1rem;
+}
+
+.wireframe {
+    border: 4px solid var(--forest-green);
+    background-color: var(--white);
+
+    padding: 1rem;
+
+    border-radius: 8px;
+}
+
+.wf-header,
+.wf-navigation,
+.wf-hero,
+.wf-title,
+.wf-content,
+.wf-card,
+.wf-footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+    font-family: var(--heading-font);
+    font-weight: 600;
+
+    border: 2px solid var(--cocoa-brown);
+    background-color: var(--light-brown);
+}
+
+.wf-header {
+    height: 60px;
+    background-color: var(--light-green);
+}
+
+.wf-navigation {
+    height: 45px;
+    margin-top: 0.75rem;
+}
+
+.wf-hero {
+    height: 160px;
+    margin-top: 0.75rem;
+    background-color: var(--cream);
+}
+
+.wf-title {
+    height: 60px;
+    margin-top: 0.75rem;
+    background-color: var(--light-green);
+}
+
+.wf-content {
+    min-height: 110px;
+    margin-top: 0.75rem;
+    padding: 1rem;
+}
+
+.wf-card {
+    min-height: 120px;
+    padding: 1rem;
+}
+
+.wf-footer {
+    height: 60px;
+    margin-top: 0.75rem;
+    background-color: var(--forest-green);
+    color: var(--white);
+}
+
+
+/* Mobile Wireframe */
+
+.mobile-wireframe {
+    max-width: 350px;
+    margin: 0 auto;
+}
+
+.mobile-wireframe .wf-card {
+    margin-top: 0.75rem;
+}
+
+.mobile-wireframe .wf-footer {
+    margin-top: 0.75rem;
+}
+
+
+/* Desktop Wireframe */
+
+.desktop-wireframe {
+    max-width: 100%;
+}
+
+.desktop-wireframe .wf-three-columns {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 0.75rem;
+
+    margin-top: 0.75rem;
+}
+
+
+/* ----------------
+   Planned Features
+   ---------------- */
+
+.feature-list {
+    padding-left: 1.5rem;
+}
+
+.feature-list li {
+    margin-bottom: 0.75rem;
+}
+
+
+/* ----------------
+   Footer
+   ---------------- */
+
+footer {
+    background-color: var(--forest-green);
+    color: var(--white);
+
+    text-align: center;
+
+    padding: 1.5rem 1rem;
+
+    border-top: 6px solid var(--cocoa-brown);
+}
+
+footer p {
+    margin: 0.25rem auto;
+}
+
+
+/* ----------------
+   Responsive Design
+   ---------------- */
+
+@media screen and (max-width: 800px) {
+
+    .site-header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .scenario-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .color-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .font-example {
+        grid-template-columns: 1fr;
+    }
+
+    .desktop-wireframe .wf-three-columns {
+        grid-template-columns: 1fr;
+    }
+}
+
+
+@media screen and (max-width: 500px) {
+
+    main {
+        padding: 1rem 0.75rem;
+    }
+
+    .plan-section {
+        padding: 1.25rem;
+    }
+
+    h1 {
+        font-size: 1.8rem;
+    }
+
+    h2 {
+        font-size: 1.35rem;
+    }
+
+    .logo-text {
+        font-size: 1.1rem;
+    }
+
+    .large-logo {
+        flex-direction: column;
+        font-size: 1.25rem;
+    }
+
+    .color-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .mobile-wireframe {
+        max-width: 100%;
+    }
+}
