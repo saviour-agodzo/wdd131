@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Generation</title>
+    <link rel="stylesheet" href="form.css">
+</head>
+<body>
+    <!-- CONTENT HERE -->
+    <main>
+        <h1>Course Proposal Application</h1>
+        <form method="get" action="thanks.html" class="wf1">
+            <fieldset>
+                <legend>Application Information</legend>
+                <label>First Name* <input type="text" name="fname" required></label>
+                <label>Last Name* <input type="text" name="lname" required></label>
+                <label>Phone* <input type="text" name="phone" placeholder="1234567890" required></label>
+                <label>Email* <input type="email" name="email" placeholder="someone@email.com" required></label>
+                <label>Website* <input type="url" placeholder="https://" name="url" required></label>
+            </fieldset>
+
+            <fieldset>
+                <legend>Course Information</legend>
+                <div>Audience</div>
+                <label><input type="radio" name="audience" value="beginner1" > Beginner</label>
+                <label><input type="radio" name="audience" value="intermediate2"> Intermediate</label>
+                <label><input type="radio" name="audience" value="advanced3"> Advanced</label>
+
+                <div>Software Needed</div>
+                <label><input type="checkbox" name="editing" value="yes">Photo Editing</label>
+                <label><input type="checkbox" name="code" value="yes">Coding</label>
+                <label><input type="checkbox" name="process" value="yes">Processor</label>
+                <label><input type="checkbox" name="client" value="yes">FTP Client</label>
+            </fieldset>
+
+            <fieldset>
+                <legend>Funding</legend>
+                <label>Anticipated Completion Date <input type="date" name="completeDate"></label>
+                <label>
+                    Course Subject
+                    <select name = "subject">
+                            <option value="">Please Select &#9662;</option>
+                        <option value="software">Software Development</option>
+                        <option value="creative">Creative Professional</option>
+                        <option value="info">Information Technology</option>
+                        <option value="data">Data Professional</option>
+                        <option value="construction">Construction</option>
+                        <option value="manufacturing">Manufacturing</option>
+                        <option value="business">Business Professional</option>
+                        <option value="security">Cyber Security</option>
+                    
+
+                </label>
+                <label>How Many Authors <input type="number" name="authors"></label>
+            </fieldset>
+
+            <input type="submit" value="Propose My Course">
+        </form>
+
+    </main>
+    
+</body>
+</html>
