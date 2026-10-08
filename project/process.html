@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description"
+        content="Learn about the major stages of cocoa production in Ghana, from farming and harvesting to fermentation and drying.">
+
+    <meta name="author" content="Saviour Agodzo">
+
+    <title>Ghana Cocoa Guide | Production Process</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Poppins:wght@600;700&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="styles/project.css">
+
+    <!-- <script src="scripts/project.js" defer></script> -->
+</head>
+
+<body>
+
+    <header class="site-header">
+
+        <div class="header-content">
+
+            <a class="logo" href="index.html">
+                <span class="logo-icon">CC</span>
+                <span class="logo-text">Ghana Cocoa Guide</span>
+            </a>
+
+            <button class="menu-button" type="button" aria-label="Open navigation menu" aria-expanded="false">
+                ☰
+            </button>
+
+            <nav class="navigation" aria-label="Main navigation">
+
+                <a href="index.html">
+                    Home
+                </a>
+
+                <a href="regions.html">
+                    Cocoa Regions
+                </a>
+
+                <a class="active" href="process.html">
+                    Production Process
+                </a>
+
+            </nav>
+
+        </div>
+
+    </header>
+
+
+    <main>
+
+        <section class="page-banner">
+
+            <div class="page-banner-content">
+
+                <p class="eyebrow">FROM FARM TO BEAN</p>
+
+                <h1>Cocoa Production Process</h1>
+
+                <p>
+                    Discover the major stages involved in producing cocoa
+                    from the farm.
+                </p>
+
+            </div>
+
+        </section>
+
+
+        <section class="section">
+
+            <div class="section-heading">
+
+                <figure class="content-image">
+                    <img src="images/cocoa-drying.jpg" alt="Cocoa beans being dried in Ghana" width="1050" height="1400"
+                        loading="lazy">
+                    <figcaption>Cocoa beans drying in Ghana</figcaption>
+                </figure>
+
+                <p class="eyebrow">THE JOURNEY</p>
+
+                <h2>How Cocoa Is Produced</h2>
+
+                <p>
+                    Cocoa production involves several important stages.
+                    Each stage contributes to the quality of the final
+                    cocoa beans.
+                </p>
+
+            </div>
+
+
+            <div id="process-container" class="process-list">
+                <!-- JavaScript will generate the production stages -->
+            </div>
+
+        </section>
+
+
+        <section id="feedback" class="section feedback-section">
+
+            <div class="section-heading">
+
+                <p class="eyebrow">YOUR THOUGHTS</p>
+
+                <h2>Share What You Learned</h2>
+
+                <p>
+                    Tell us what part of Ghanaian cocoa production interests
+                    you most.
+                </p>
+
+            </div>
+
+
+            <form id="feedback-form" class="feedback-form">
+
+                <div class="form-group">
+
+                    <label for="visitor-name">
+                        Your Name
+                    </label>
+
+                    <input type="text" id="visitor-name" name="visitor-name" autocomplete="name" required minlength="2">
+
+                </div>
+
+
+                <div class="form-group">
+
+                    <label for="visitor-interest">
+                        What interests you most?
+                    </label>
+
+                    <select id="visitor-interest" name="visitor-interest" required>
+
+                        <option value="">
+                            Select an option
+                        </option>
+
+                        <option value="regions">
+                            Cocoa-growing regions
+                        </option>
+
+                        <option value="farming">
+                            Cocoa farming
+                        </option>
+
+                        <option value="harvesting">
+                            Harvesting
+                        </option>
+
+                        <option value="processing">
+                            Cocoa processing
+                        </option>
+
+                    </select>
+
+                </div>
+
+
+                <div class="form-group">
+
+                    <label for="visitor-message">
+                        Your Comment
+                    </label>
+
+                    <textarea id="visitor-message" name="visitor-message" rows="5" minlength="5" required></textarea>
+
+                </div>
+
+
+                <button class="button" type="submit">
+                    Submit Response
+                </button>
+
+                <p id="form-message" class="form-message" aria-live="polite">
+                </p>
+
+            </form>
+
+        </section>
+
+    </main>
+
+
+    <footer class="site-footer">
+
+        <div class="footer-content">
+
+            <div>
+                <h2>Ghana Cocoa Guide</h2>
+
+                <p>
+                    Discovering the story behind Ghanaian cocoa.
+                </p>
+            </div>
+
+            <div class="footer-links">
+
+                <h3>Explore</h3>
+
+                <a href="index.html">Home</a>
+                <a href="regions.html">Cocoa Regions</a>
+                <a href="process.html">Production Process</a>
+                <a href="references.html">References</a>
+
+            </div>
+
+        </div>
+
+        <p class="copyright">
+            &copy; 2026 Ghana Cocoa Guide | WDD 131 Project
+        </p>
+
+    </footer>
+
+    <script src="scripts/project.js" defer></script>
+
+</body>
+
+</html>
